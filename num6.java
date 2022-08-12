@@ -23,12 +23,9 @@ public class num6 {
             System.out.println("");
         }
         for(int i = 0; i<8; i++){
-            for(int j = 0; j<8; j += 2){
-                somaDiagonal += matriz[i][j];
-                linha++;
-                coluna += 2;
-            }
-            System.out.println("");
+            somaDiagonal += matriz[linha][coluna];
+            linha++;
+            coluna++;
         }
         System.out.println("Soma da diagonal: " + somaDiagonal);
     }
